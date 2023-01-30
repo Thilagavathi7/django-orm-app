@@ -16,6 +16,7 @@ Step 2: Implement that as Python code
 Step 3: push that python code to github
 
 PROGRAM
+```
 
 from django.db import models
 
@@ -33,6 +34,8 @@ class Customer(models.Model):
 
 class CustomerAdmin(admin.ModelAdmin):
     list_display = ('customerid','customername','mobilenumber','email','quantity')
+    
+```
 
 ## OUTPUT
 
@@ -41,3 +44,4 @@ class CustomerAdmin(admin.ModelAdmin):
 ![orm cu](https://user-images.githubusercontent.com/119407159/215472824-3f34f6d5-e218-4615-a3ce-18a365ac0b73.png)
 
 ## RESULT
+The program was executed successfully.

@@ -3,9 +3,10 @@
 ## AIM
 To develop a Django application to store and retrieve data from a database using Object Relational Mapping(ORM).
 
+
 ## Entity Relationship Diagram
 
-Include your ER diagram here
+![orm tree](https://user-images.githubusercontent.com/119407159/215472727-675affe0-bcfd-48dc-b3a1-07b7581cfb59.png)
 
 ## DESIGN STEPS
 Step 1: create and collect customers infomartion using django application
@@ -32,11 +33,11 @@ class Customer(models.Model):
 
 class CustomerAdmin(admin.ModelAdmin):
     list_display = ('customerid','customername','mobilenumber','email','quantity')
-    
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![orm custo](https://user-images.githubusercontent.com/119407159/215472793-3254545c-bb1d-4362-9dbf-4f822a41d6a9.png)
 
+![orm cu](https://user-images.githubusercontent.com/119407159/215472824-3f34f6d5-e218-4615-a3ce-18a365ac0b73.png)
 
 ## RESULT

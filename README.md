@@ -8,18 +8,30 @@ To develop a Django application to store and retrieve data from a database using
 Include your ER diagram here
 
 ## DESIGN STEPS
+Step 1: create and collect customers infomartion using django application
 
-### STEP 1:
+Step 2: Implement that as Python code
 
-### STEP 2:
+Step 3: push that python code to github
 
-### STEP 3:
+PROGRAM
+from django.db import models
 
-Write your own steps
+# Create your models here. 
+from django.db import models
+from django.contrib import admin
+# Create your models here.
+class Customer(models.Model):
+    customerid = models.CharField(max_length=8,primary_key=True)
+    customername =models.CharField(max_length=100)
+    mobilenumber =models.CharField(max_length=100)
+    email = models.EmailField()
+    quantity= models.IntegerField()
+    
 
-## PROGRAM
-
-Include your code here
+class CustomerAdmin(admin.ModelAdmin):
+    list_display = ('customerid','customername','mobilenumber','email','quantity')
+    
 
 ## OUTPUT
 
